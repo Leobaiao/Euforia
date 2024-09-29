@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Confeitaria Euforia</title>
+        <!--tag description serve para descrever o site, manter tag atuaizada-->
+        <meta name="description" content="Doces, bolos, chocolates, cupcakes, cookies, panetone, pascoa">
+        <!--tag keywords serve para usar palavras chaves para mecanismos de busca-->
+        <meta name="keywords" content="Doces, bolos, chocolates, cupcakes, cookies, confeitaria, boleira,">
+        <!--tag robots serve para autorizar os mecanismos de busca a ver e entrar no site-->
+        <meta name="robots" content="index, follow">
+        <!--tag charset serve para especificar os caracteres-->
+        <meta charset="UTF-8">
+        <!--mostra para a pagina com se comportar com a pagina-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--tag author serve para mostrar o criador da pagina-->
+        <meta author="Leonardo Baião De Santana">
+    </head>
+    <style>
+                #scrolltop{
+            width: 50px;
+            height: 50px;
+            outline: none;
+            border: none;
+            transition: 0.2s;
+            position: fixed;
+            bottom: 10px;
+            border-radius: 10px;
+            background-color: pink;
+            color: white;
+        }
+        /* Reset básico para remover margin e padding padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Estilo para a nav-bar */
+.nav-bar {
+    background-color: #ff69b4; /* Rosa pink */
+    padding: 10px;
+    position: sticky; /* Fixa no topo da página */
+    width: 100%; /* Ocupa toda a largura */
+    top: 0; /* Sempre no topo */
+    z-index: 1000; /* Fica sobre outros elementos */
+    display: flex; /* Para alinhar a logo e o menu no mesmo nível */
+    justify-content: center; /* Espaça a logo e o menu */
+    align-items: center; /* Alinha verticalmente */
+    height: 80px; /* Ajusta o tamanho da barra*/
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+/* Estilo para a logo */
+.logo {
+    margin-left: 20px; /* Adiciona um espaço à esquerda */
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+}
+
+/* Estilo para os itens da nav-bar */
+.nav-bar ul {
+    list-style-type: none; /* Remove os marcadores de lista */
+    display: flex; /* Deixa os itens em linha */
+    gap: 20px; /* Espaçamento entre os itens do menu */
+    margin-right: 20px; /* Adiciona um espaço à direita */
+}
+
+.nav-bar ul li {
+    display: inline; /* Alinha os itens horizontalmente */
+}
+
+.nav-bar ul li a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: white; /* Cor do texto */
+    font-weight: bold; /* Negrito */
+    padding: 10px 20px; /* Espaçamento interno dos links */
+    transition: background-color 0.3s; /* Animação ao passar o mouse */
+}
+
+.nav-bar ul li a:hover {
+    background-color: #ff4500; /* Laranja quando passar o mouse */
+    border-radius: 5px; /* Arredonda os cantos do link ao hover */
+}
+
+/* Estilo básico para as seções */
+section {
+    padding: 20px 20px;
+    margin-top: 20px; /* Compensa a altura da nav-bar fixa */
+    display: flex; /* tornar o display personalizavel */
+    flex-wrap: wrap; /* explicar a função */
+    justify-content: center; /* explicar a função */
+    align-items: center; /* explicar a função */
+    
+}
+
+/* Título principal */
+h1, h2 {
+    color: #ff69b4; /* Rosa pink */
+    text-align: center;
+}
+
+    </style>
+    <script>
+    window.onload = function() {    
+    let scrolltop = document.getElementById("scrolltop");
+
+    scrolltop.addEventListener("click", function() {
+        window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+        });
+    });
+    let home = document.getElementById("home")
+
+    home.addEventListener("click", function() {
+        window.scrollTo({top:0, behavior: "smooth"})
+    })}
+    </script>
+    
+    <body>
+        
+        <nav class="nav-bar" id="nav-bar">
+            <header>
+            <img class="logo" width="50" height="50" src="https://cdn.beacons.ai/user_content/gCwR2xKhuafgyXVu8wUi7hwgY6z2/profile_docurasdadre.png?q=1627654647.9365346">
+            
+        </header>
+        <ul>
+            <li><a href="#bolos">bolos</a></li>
+            <li><a href="#doces">doces</a></li>
+            <li><a href="#comemorativas">datas comemorativas</a></li>
+            <li><a href="#contato">contato</a></li>
+            <li><a href="#rodape">rodape</a></li>
+        </ul>
+    </nav>
+    
+    <button id="scrolltop">top</button>
+    <div class="barra" ></div>
+
+    <section class="bolos" id="bolos">
+        <h1>bolos</h1>
+            <p>Delicie-se com o nosso bolo artesanal, cuidadosamente preparado com os ingredientes mais frescos e de alta qualidade. Perfeito para qualquer ocasião especial, este bolo combina camadas macias e úmidas com um recheio cremoso que derrete na boca, finalizado com uma cobertura decorativa impecável. Escolha entre nossos sabores clássicos ou peça a sua versão personalizada. Faça seu evento ainda mais doce com a nossa confeitaria!</p>
+        <div class="cards">
+            <img width="300" height="300" src="bolo.jpeg" alt="bolo com combertura de frutas">
+            <img width="300" height="300" src="bolo-2.jpeg" alt="bolo com cobertura de morango e um laço em volta">
+            <br>
+            <img width="300" height="300" src="bolo-3.jpeg" alt="bolo branco com ecoração de rosas">
+            <img width="300" height="300" src="bolo-4.jpeg" alt="bolo vulcão de chocolate">
+        </div>
+        </section>
+        <section class="doces" id="doces">
+        <h1>doces</h1>
+            <p>Nossos doces são feitos com amor e atenção aos detalhes, garantindo sabores irresistíveis e apresentação impecável. De brigadeiros cremosos a trufas sofisticadas, cada pedaço é uma explosão de sabor, ideal para adoçar seu dia ou surpreender em ocasiões especiais. Descubra nossa variedade de doces artesanais, perfeitos para festas, presentes ou aquele momento de indulgência que você merece!Nossos doces são feitos com amor e atenção aos detalhes, garantindo sabores irresistíveis e apresentação impecável. De brigadeiros cremosos a trufas sofisticadas, cada pedaço é uma explosão de sabor</p>
+        <div class="cards">    
+            <img width="300" height="300" src="doce.jpeg" alt="dois-geladinhos-de-nutella">
+            <img width="300" height="300" src="doce-2.jpeg" alt="doces-em-copinhos-de-chocolate-com-cereja-em-cima">
+            <br>
+            <img width="300" height="300" src="doce-3.jpeg" alt="varios-brigadeiros">
+            <img width="300" height="300" src="doce-4.jpeg" alt="pudim-de-leite">
+        </div>
+        </section>
+        <section class="comemorativas" id="comemorativas">
+        <!--mudar nome da section, id e class para Pedidos personalizados -->
+        <h1>Datas comemorativas</h1>
+            <p>Comemore as datas mais especiais do ano com os sabores únicos da nossa confeitaria. Seja no Dia dos Namorados, Páscoa ou Natal, nossos produtos artesanais são pensados para tornar cada momento ainda mais doce e memorável. Desde chocolates finos e ovos de Páscoa personalizados até bolos temáticos e kits exclusivos para presentear, temos a opção perfeita para cada celebração. Surpreenda quem você ama com o toque especial de nossas criações e transforme qualquer festividade em uma ocasião inesquecível!</p>
+        <div class="cards">    
+            <img width="300" height="300" src="panetone.jpeg" alt="3-panetones-com-cobertura-dourada" >        
+            <img width="300" height="300" src="panetone-2.jpeg" alt="panetone-com-cobertura-dourada" >        
+            <br>
+            <img width="300" height="300" src="doce-de-natal.jpeg" alt="doce-tematica-de-natal" >        
+            <img width="300" height="300" src="doce-natal-2.jpeg" alt="doce-de-natal" >        
+        </div>
+        </section>
+        <article class="contato" id="contato">
+            <!--colocar api e link para conectar no whatsapp-->
+            <p>entre em contato atraves do nosso whatsapp.</p>
+        </article>
+        <footer class="rodape" id="rodape">
+            <p>                
+                <a href="whatsapp">whatsapp</a>
+                <a href="email">email</a>
+                <a href="instagram">instagram</a>
+                <a href="facebook">facebook</a>
+                <a href="endereço">endereço</a>
+               
+            </p>
+        </footer>
+
+    </body>
+</html>
