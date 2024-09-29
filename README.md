@@ -1,2 +1,0 @@
-# euforia
-confeitaria euforia
